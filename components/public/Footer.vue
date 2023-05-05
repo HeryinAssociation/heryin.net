@@ -143,6 +143,7 @@ const content = [
     title: '友情链接',
     items: [
       { name: '中州纪元', link: 'https://mc.heryin.net' },
+      { name: '咔哩吧', link: 'https://mc.calibur.tv/' },
       { name: '极客学园', link: 'https://geekpara.com' },
     ],
   },
