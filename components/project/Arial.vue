@@ -1,10 +1,10 @@
 <template>
   <section class="my-20" id="arial">
-    <div class="m-10 text-right" data-aos="fade-left">
-      <h2 class="text-5xl text-primary" style="font-family: Heryin">
+    <div class="my-10 mx-6 md:mx-20 text-right" data-aos="fade-left">
+      <h2 class="text-4xl md:text-5xl text-primary" style="font-family: Heryin">
         航测建模及制图
       </h2>
-      <p class="text-xl">
+      <p class="text-md md:text-xl">
         基于我们在 Minecraft
         中还原场景的需求，我们衍生出了无人机航测、建模、制图等的业务。
       </p>

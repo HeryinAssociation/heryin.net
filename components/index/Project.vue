@@ -20,7 +20,6 @@
             :key="i.title"
             class="relative flex flex-col items-center p-6 bg-white rounded shadow-xl"
           >
-            <div v-html="i.icon"></div>
             <h4 class="text-xl font-bold leading-snug tracking-tight mb-1">
               {{ i.title }}
             </h4>

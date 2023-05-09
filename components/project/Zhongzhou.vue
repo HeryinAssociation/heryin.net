@@ -1,10 +1,10 @@
 <template>
   <section class="my-20" id="zhongzhou">
-    <div class="m-10" data-aos="fade-right">
-      <h2 class="text-5xl text-primary" style="font-family: Heryin">
+    <div class="my-10 mx-6 md:mx-20" data-aos="fade-right">
+      <h2 class="text-4xl md:text-5xl text-primary" style="font-family: Heryin">
         中州纪元
       </h2>
-      <p class="text-xl">
+      <p class="text-md md:text-xl">
         《中州纪元》是由和瑛社团开发的国风开放世界RPG型Minecraft基岩版多人服务器。<br />
         服务器的核心玩法是探索开放世界，体验架空世界观和剧情，<br />
         体验不同于Minecraft原版的新添加元素。<br />

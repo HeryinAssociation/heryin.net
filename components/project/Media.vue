@@ -1,10 +1,10 @@
 <template>
   <section class="my-20" id="media">
-    <div class="m-10 text-right" data-aos="fade-left">
-      <h2 class="text-5xl text-primary" style="font-family: Heryin">
+    <div class="my-10 mx-6 md:mx-20 text-right" data-aos="fade-left">
+      <h2 class="text-4xl md:text-5xl text-primary" style="font-family: Heryin">
         自媒体事业
       </h2>
-      <p class="text-xl">
+      <p class="text-md md:text-xl">
         我们运营自媒体账号，
         <br />
         专注于产出高质量 Minecraft 实况、模组介绍、VR 视频等内容，
