@@ -36,7 +36,6 @@ type Article = {
 }
 
 const contentQuery = await queryContent().find()
-
 const list = reactive([] as Article[])
 for (const article of contentQuery) {
   list.push({
@@ -46,6 +45,5 @@ for (const article of contentQuery) {
     link: article._path || '#',
   })
 }
-
 list.sort((a, b) => (a.date > b.date ? -1 : 1))
 </script>

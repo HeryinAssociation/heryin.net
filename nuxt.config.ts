@@ -33,7 +33,7 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/index.scss'],
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxt/image'],
   content: {
     documentDriven: true,
   },
