@@ -1,0 +1,33 @@
+name: Build Static Pages
+on:
+    workflow_dispatch:
+    push:
+        branches: main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+        with: 
+          fetch-depth: 0
+
+      - name: Install and Build 🔧
+        run: |
+          yarn install
+          yarn generate
+          
+      - name: Install coscmd
+        run: sudo pip install coscmd
+          
+      - name: Configure coscmd
+        env:
+          SECRET_ID: ${{ secrets.TC_SecretId }}
+          SECRET_KEY: ${{ secrets.TC_SecretKey }}
+          BUCKET: heryin-net-1306930939
+          REGION: ap-beijing
+        run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
+
+      - name: Upload
+        run: coscmd upload -rs --delete -f .output/public/ /
