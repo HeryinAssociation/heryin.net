@@ -23,6 +23,7 @@ jobs:
           pnpm install
           ls
           pwd
+          ls /home/runner/work/heryin.net/heryin.net/assets/images/join/
           pnpm generate
           
       - name: Install coscmd
