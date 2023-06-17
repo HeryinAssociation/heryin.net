@@ -15,8 +15,8 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          yarn install
-          yarn generate
+          pnpm install
+          pnpm generate
           
       - name: Install coscmd
         run: sudo pip install coscmd
