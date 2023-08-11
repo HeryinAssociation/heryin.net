@@ -40,8 +40,7 @@
               data-aos="zoom-y-out"
               data-aos-delay="150"
             >
-              和瑛社团是一个紧密团结的事业型同好社园，由一群怀瑞理想、志同道合的大学生组成。我们的业务主要涵盖
-              Minecraft 相关开发。
+              和瑛社团是一个紧密团结的事业型同好社园，由一群怀瑞理想、志同道合的大学生组成。我们的业务主要涵盖游戏相关开发。
             </p>
             <div
               class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"

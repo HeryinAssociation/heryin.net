@@ -52,7 +52,7 @@ import Qr3 from 'assets/images/project/2-Media-3-2.webp'
 
 const content = [
   {
-    name: '闹钟酱同志',
+    name: '五更茶楼',
     platform: '哔哩哔哩',
     img: Img2Media1,
     qr: Qr1,
