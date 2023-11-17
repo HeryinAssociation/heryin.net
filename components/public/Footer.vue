@@ -126,13 +126,13 @@ const content = [
     items: [
       { name: '全部项目', link: '/project' },
       { name: '加入我们', link: '/join' },
-      { name: '联系我们', link: 'mailto:contact@heryin.net' },
+      { name: '联系我们', link: 'mailto:mail@heryin.net' },
     ],
   },
   {
     title: '社交媒体',
     items: [
-      { name: '哔哩哔哩', link: 'https://space.bilibili.com/359343298' },
+      { name: '哔哩哔哩', link: 'https://space.bilibili.com/59979451' },
       { name: '微博', link: 'https://weibo.com/u/7775335967' },
       // { name: 'YouTube', link: '' },
       // { name: 'Instagram', link: '' },
