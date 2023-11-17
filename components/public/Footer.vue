@@ -105,7 +105,7 @@
       >
         <div class="text-sm text-gray-600 mr-4 content-start">
           2018-{{ new Date().getFullYear() }}{{ ' ' }}
-          <strong>和瑛社区 &copy; 版权所有</strong>
+          <strong>和瑛社团 &copy; 版权所有</strong>
         </div>
         <div class="text-sm text-gray-600 mr-4 content-end">
           <NuxtLink to="https://beian.miit.gov.cn" target="_blank">
