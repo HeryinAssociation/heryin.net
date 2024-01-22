@@ -1,3 +1,8 @@
 <template>
-  <div>123</div>
+  <div>
+    <AboutHero />
+    <AboutTabbar />
+    <NuxtPage class="pt-4" />
+  </div>
 </template>
+<script setup lang="ts"></script>
