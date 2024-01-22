@@ -5,12 +5,12 @@
       <div class="text-center relative max-w-1080p mx-auto overflow-hidden">
         <!-- Section header -->
         <img
-          class="z-0 w-full h-auto max-lg:hidden"
+          class="z-0 w-full h-auto max-aspect-1/1:hidden"
           :src="HeroImage"
           alt="Hero"
         />
         <img
-          class="z-0 w-full h-auto lg:hidden"
+          class="z-0 w-full h-auto aspect-1/1:hidden"
           :src="HeroImageSm"
           alt="Hero"
         />
@@ -35,3 +35,16 @@
 import HeroImage from 'assets/images/about/about-heryin-hero.png'
 import HeroImageSm from 'assets/images/about/about-heryin-hero-sm.png'
 </script>
+
+<style scoped>
+@media (min-aspect-ratio: 1/1) {
+  .aspect-1\/1\:hidden {
+    @apply hidden;
+  }
+}
+@media not (min-aspect-ratio: 1/1) {
+  .max-aspect-1\/1\:hidden {
+    @apply hidden;
+  }
+}
+</style>
