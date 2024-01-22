@@ -26,15 +26,22 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   css: ['~/assets/css/index.scss'],
   modules: ['@nuxt/content', '@nuxt/image'],
+
   content: {
     documentDriven: true,
+  },
+
+  devtools: {
+    enabled: false,
   },
 })
