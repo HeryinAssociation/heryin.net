@@ -69,6 +69,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        heryin: ['heryin'],
       },
       fontSize: {
         xs: '0.75rem',
@@ -116,6 +117,8 @@ module.exports = {
         48: '12rem',
       },
       maxWidth: {
+        '7xl': '80rem',
+        '8xl': '88rem',
         '1080p': '1920px',
       },
       width: {

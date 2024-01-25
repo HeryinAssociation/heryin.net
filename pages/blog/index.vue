@@ -35,7 +35,7 @@ type Article = {
   link: string
 }
 
-const contentQuery = await queryContent().find()
+const contentQuery = await queryContent('', '/blog').find()
 const list = reactive([] as Article[])
 for (const article of contentQuery) {
   list.push({
