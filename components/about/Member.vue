@@ -19,7 +19,7 @@
 <script setup lang="ts">
 type Member = {
   name: string
-  info: string
+  info?: string
   headSrc: string
   index: number
 }
@@ -33,7 +33,6 @@ type MemberField = {
 }
 type Paths = {
   path: string
-  index: number
 }
 
 // 对象数组中用于 sort 方法的排序函数

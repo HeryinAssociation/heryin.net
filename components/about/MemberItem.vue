@@ -30,7 +30,7 @@
 <script setup lang="ts">
 type Member = {
   name: string
-  info: string
+  info?: string
   headSrc: string
   index: number
 }

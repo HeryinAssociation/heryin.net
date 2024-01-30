@@ -1,12 +1,10 @@
 {
   "paths": [
     {
-      "path": "core",
-      "index": 1
+      "path": "core"
     },
     {
-      "path": "dev",
-      "index": 2
+      "path": "dev"
     }
   ]
 }
