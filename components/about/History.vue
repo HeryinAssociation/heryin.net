@@ -18,8 +18,10 @@
 </template>
 
 <script setup lang="ts">
-const query = await queryContent('about', 'history').find()
-const page = query[0]
+const { data: query } = await useAsyncData('content', () =>
+  queryContent('about', 'history').find()
+)
+const page = query.value![0]
 
 onMounted(() => {
   document.title = page.title!

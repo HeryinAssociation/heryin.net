@@ -7,70 +7,87 @@
       >
         <h1>成员组成</h1>
         <p>和瑛由许多友爱的伙伴们组成。</p>
-        <AboutMemberItem :member-field="coreMemberField">
-          <template #title>核心成员</template>
-          <template #description> 没有他们，就没有和瑛 </template>
-        </AboutMemberItem>
-        <AboutMemberItem :member-field="devMemberField">
-          <template #title> {{ devMemberField.title }} </template>
-          <template #description>
-            {{ devMemberField.description }}
-          </template>
-        </AboutMemberItem>
+        <template v-for="field of fieldList">
+          <AboutMemberItem :member-field="field" />
+        </template>
+        <!-- <AboutMemberItem :member-head="coreMemberField" /> -->
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import ImgZhao from '~/assets/images/about/member/Zhao.png'
 type Member = {
   name: string
   info: string
-  head: string
+  headSrc: string
+  index: number
 }
-type MemberField = {
+type MemberHead = {
   title: string
   description: string
+}
+type MemberField = {
+  head: MemberHead
   memberList: Member[]
 }
+type Paths = {
+  path: string
+  index: number
+}
 
-const coreConfig = await queryContent('about', 'member', 'core')
-  .where({ _file: { $contains: 'json' } })
-  .findOne()
-const coreMemberList: Member[] = [
-  {
-    name: '景晔',
-    info: '景晔，创始人，为了和瑛社而奋斗',
-    head: ImgZhao,
-  },
-]
+// 对象数组中用于 sort 方法的排序函数
+const sortBy = (attr: string, rev = 1) => {
+  return (a: any, b: any) => rev * (a[attr] - b[attr])
+}
 
-const coreMemberField = reactive<MemberField>({
-  title: coreConfig.title!,
-  description: coreConfig.description!,
-  memberList: coreMemberList,
-})
+// 获取 /content/about/member/config 的第一个 json 内容（也即 paths.json）
+const { data: pathConfig } = await useAsyncData('path', () =>
+  queryContent('about', 'member', 'config')
+    .where({ _type: { $eq: 'json' } })
+    .findOne()
+)
+// 用于渲染的列表
+const fieldList = [] as MemberField[]
 
-const devMemberField = reactive<MemberField>({
-  title: '',
-  description: '',
-  memberList: [],
-})
+// 从获取的列表中循环获取 MemberHead 信息和 Member[] 信息
+for (const pathItem of pathConfig.value?.paths as Paths[]) {
+  // 从 JSON 文件获取 MemberHead
+  const { data: config } = await useAsyncData('conf', () =>
+    queryContent('about', 'member', pathItem.path)
+      .where({ _type: { $eq: 'json' } })
+      .findOne()
+  )
+  // 解析 JSON
+  const head = {
+    title: config.value!.title,
+    description: config.value!.description,
+  } as MemberHead
 
-const devsConfig = await queryContent('about', 'member', 'devs')
-  .where({ _file: { $contains: 'json' } })
-  .findOne()
-devMemberField.title = devsConfig.title!
-devMemberField.description = devsConfig.description!
-const devsQuery = await queryContent('about', 'member', 'devs')
-  .where({ _file: { $contains: 'md' } })
-  .find()
-for (const devMember of devsQuery) {
-  devMemberField.memberList.push({
-    name: devMember.title || 'No name',
-    info: devMember.info || 'No Info',
-    head: devMember.headSrc || 'No Source',
-  })
+  // 最终被用于 push 入 fieldList 的 field
+  const field = {
+    head: head,
+    memberList: [] as Member[],
+  } as MemberField
+
+  // 从 Markdown 文件中获取 Member[]
+  const { data: memberList } = await useAsyncData('memberList', () =>
+    queryContent('about', 'member', pathItem.path)
+      .where({ _type: { $eq: 'markdown' } })
+      .find()
+  )
+  // 解析 markdown 文件
+  for (const memberRef of memberList.value!) {
+    const member = {
+      name: memberRef.name,
+      info: memberRef.info,
+      headSrc: memberRef.headSrc,
+      index: memberRef.index,
+    } as Member
+    field.memberList.push(member)
+  }
+  // 排序函数
+  field.memberList.sort(sortBy('index'))
+  fieldList.push(field)
 }
 </script>
