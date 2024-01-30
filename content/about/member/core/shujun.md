@@ -1,6 +1,6 @@
 ---
 name: 纾浚
-info: 你好，我是纾浚，我搭建了整个网站的框架
-headSrc: /aboutimg/member/devs/shujun.png
-index: 2
+info: 联合创始人之一，搭建了整个网站的框架
+headSrc: /images/about/member/core/shujun.png
+index: 3
 ---

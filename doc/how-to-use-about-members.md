@@ -20,7 +20,7 @@
     - _head-icon.any-ext..._
 ```
 
-其中，paths.json 是用于存放**目录名列表**的，程序会识别其中的**目录名**。
+其中，paths.json 是用于存放**目录名列表**的，程序会识别其中的**目录名**。不过，paths.json 中并不会识别列表的 comment 字段，这是用于备注的，以防名字出错。
 
 稍后，程序将在 `content/about/member/` 下自动寻找对应目录下的文件，并按照**目录名列表**的顺序来排序。
 并且，程序将在 `public/images/about/member/`的对应目录下查找头像图片。（因为使用 Nuxt3 和 NuxtContent 管理内容时，只能通过 public 文件夹来导入静态图片。）
