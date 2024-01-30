@@ -41,7 +41,7 @@ const TabBarList = reactive<tabItem[]>([
     selected: false,
   },
   {
-    name: '合作伙伴',
+    name: '加入我们',
     componentName: 'AboutPartner',
     selected: false,
   },

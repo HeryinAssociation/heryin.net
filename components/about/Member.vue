@@ -46,7 +46,6 @@ const { data: pathConfig } = await useAsyncData('path', () =>
     .where({ _type: { $eq: 'json' } })
     .findOne()
 )
-console.log(pathConfig.value)
 
 // 用于渲染的列表
 const fieldList = [] as MemberField[]
