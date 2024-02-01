@@ -62,12 +62,14 @@ module.exports = {
         none: 'none',
       },
       spacing: {
+        '1/2': '50%',
         '9/16': '56.25%',
         '3/4': '75%',
         '1/1': '100%',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        heryin: ['heryin'],
       },
       fontSize: {
         xs: '0.75rem',
@@ -113,6 +115,20 @@ module.exports = {
       minWidth: {
         10: '2.5rem',
         48: '12rem',
+      },
+      maxWidth: {
+        '7xl': '80rem',
+        '8xl': '88rem',
+        '1080p': '1920px',
+      },
+      width: {
+        '8/5': '160%',
+      },
+      height: {
+        96: '24rem',
+        128: '32rem',
+        144: '36rem',
+        192: '48rem',
       },
       opacity: {
         90: '0.9',

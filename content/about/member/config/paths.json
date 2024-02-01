@@ -1,0 +1,15 @@
+{
+  "paths": [
+    {
+      "path": "core",
+      "comment": "核心成员"
+    },
+    {
+      "path": "devs"
+    },
+    {
+      "path": "digit-creative",
+      "comment": "数字创意部"
+    }
+  ]
+}
