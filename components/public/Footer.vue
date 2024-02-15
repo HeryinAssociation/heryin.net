@@ -105,7 +105,7 @@
       >
         <div class="text-sm text-gray-600 mr-4 content-start">
           2018-{{ new Date().getFullYear() }}{{ ' ' }}
-          <strong>和瑛社区 &copy; 版权所有</strong>
+          <strong>和瑛社团 &copy; 版权所有</strong>
         </div>
         <div class="text-sm text-gray-600 mr-4 content-end">
           <NuxtLink to="https://beian.miit.gov.cn" target="_blank">
@@ -126,13 +126,13 @@ const content = [
     items: [
       { name: '全部项目', link: '/project' },
       { name: '加入我们', link: '/join' },
-      { name: '联系我们', link: 'mailto:contact@heryin.net' },
+      { name: '联系我们', link: 'mailto:mail@heryin.net' },
     ],
   },
   {
     title: '社交媒体',
     items: [
-      { name: '哔哩哔哩', link: 'https://space.bilibili.com/359343298' },
+      { name: '哔哩哔哩', link: 'https://space.bilibili.com/59979451' },
       { name: '微博', link: 'https://weibo.com/u/7775335967' },
       // { name: 'YouTube', link: '' },
       // { name: 'Instagram', link: '' },
@@ -144,7 +144,7 @@ const content = [
     items: [
       { name: '中州纪元', link: 'https://mc.heryin.net' },
       { name: '咔哩吧', link: 'https://mc.calibur.tv/' },
-      { name: '极客学园', link: 'https://geekpara.com' },
+      { name: '中国Minecraft高校联盟', link: 'https://www.mualliance.cn/' },
     ],
   },
 ]
