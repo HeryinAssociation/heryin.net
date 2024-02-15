@@ -1,7 +1,7 @@
 <template>
   <section class="relative">
     <div
-      class="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-red-900 pointer-events-none"
+      class="absolute inset-0 top-1/4 md:mt-24 lg:mt-0 bg-red-900 pointer-events-none"
       aria-hidden="true"
     ></div>
 
@@ -18,7 +18,7 @@
           <div
             v-for="i in cardContent"
             :key="i.title"
-            class="relative flex flex-col items-center p-6 bg-white rounded shadow-xl"
+            class="relative flex flex-col items-center p-6 bg-slate-50 rounded shadow-xl"
           >
             <h4 class="text-xl font-bold leading-snug tracking-tight mb-1">
               {{ i.title }}
@@ -46,33 +46,33 @@ import icons from 'assets/icons/index/project'
 
 const cardContent = [
   {
-    title: '中州纪元',
-    text: '中州纪元是一款国风开放世界 RPG 型 Minecraft 基岩版多人服务器。也是和瑛社主营的项目。',
+    title: '方块元宇',
+    text: '我们构成⼀种结合航测和体素建模的数字重建新⽅案，能够较好地胜任数字⼈⽂、数字孪⽣、⽂化创意等特定领域的应⽤需求。',
     icon: icons.icon1,
+  },
+  {
+    title: 'MC 服务器运维',
+    text: '我们以公益性和社区性为主要导向，面向广大社区提供 MC 服务器运维服务。',
+    icon: icons.icon2,
   },
   {
     title: '自媒体事业',
     text: '我们运营自媒体账号，专注于产出高质量 Minecraft 实况、模组介绍、VR 视频等内容。',
-    icon: icons.icon2,
-  },
-  {
-    title: 'MC 服务器运维',
-    text: '除中州纪元外，和瑛还运营着和瑛领域、云南大学 MC 服务器、南开大学 MC 服务器等多个 MC 服务器。',
     icon: icons.icon3,
   },
   {
-    title: '航测建模及制图',
-    text: '基于我们数字孪生场景还原业务的技术需求，我们衍生出了无人机航测、建模、制图等的业务。',
+    title: '文化创意',
+    text: '我们重视创意驱动，通过各种方式激励创意创造，通过使创意落地的办法。',
     icon: icons.icon4,
   },
   {
-    title: '数字孪生场景设计',
-    text: '我们通过基于体素模型的数字孪生场景设计与构建，来复原现实中的场景、建筑等，应用于文旅融合等领域。',
+    title: '体素艺术',
+    text: '我们基于体素风格，借助沙盒平台Minecraft，复原现实场景或设计场景。',
     icon: icons.icon5,
   },
   {
-    title: 'MC 相关学术研究',
-    text: '主要内容包括撰写学术论文、参加各类相关赛事。旨在推动社团学术化建设及促进社员个人全面发展。',
+    title: '学术研究',
+    text: '主要内容包括撰写学术论文、参加各类相关赛事。',
     icon: icons.icon6,
   },
 ]
