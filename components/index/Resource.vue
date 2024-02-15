@@ -14,9 +14,9 @@
             data-aos="fade-right"
           >
             <div class="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-              <h3 class="h3 mb-3">我们的资源优势</h3>
+              <h3 class="h3 mb-3">我们的优势</h3>
               <p class="text-xl text-gray-600">
-                和瑛社有各种各样的无论资金、人脉、技术以及实体设备资源，为社内项目的实施提供强有力的保障。
+                在长期的实践和探索中, 和瑛社逐渐形成了独特优势。
               </p>
             </div>
             <div class="mb-8 md:mb-0">
@@ -100,22 +100,22 @@ const currentTab = ref(0)
 
 const tabContent = [
   {
-    title: '各领域杰出人才',
-    text: '服务器运维、三维建模、视频制作、音乐制作、文案编纂、配音……各方面杰出人才汇聚和瑛。',
+    title: '多元化人才网络',
+    text: '通过与跨校和行业的合作，聚集了来自各领域的杰出人才，他们涵盖了跨校、跨专业的多元化背景，促进跨域知识和经验交流。',
     icon: icons.moon,
     img: Tab01,
   },
   {
-    title: '稳定的服务器',
-    text: '以 Minecraft 为主题的和瑛社拥有高性能服务器用以支持中州纪元等多个 MC 服务器项目的运行。',
+    title: '对接实践前沿',
+    text: '在各类双创竞赛、商业实践、技术实战中汇聚了丰富宝贵的经验；同时与行业保持紧密联系，作为开展实践学习的实际指导。',
     icon: icons.thunder,
-    img: Tab02,
+    img: Tab03,
   },
   {
-    title: '高性能工作站',
-    text: '一台高性能工作站可以协助我们完成诸如 3D 渲染、航测计算、视频渲染等众多计算密集型繁重任务。',
+    title: '坚实的物质保障',
+    text: '在商业实践中的收益反哺于实践学习的广泛开展；此外，稳定服务器和高性能工作站；为社团开展技术实践提供平台。',
     icon: icons.arrow,
-    img: Tab03,
+    img: Tab02,
   },
 ]
 </script>
