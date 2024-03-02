@@ -5,11 +5,18 @@
 </template>
 <script setup lang="ts">
 import Img1Zhongzhou0 from 'assets/images/project/1-Zhongzhou-0.webp'
+import Img2fangkuai0 from 'assets/images/project/1-Zhongzhou-0.webp'
 import Img2Media0 from 'assets/images/project/2-Media-0.webp'
 import Img3MCSvr0 from 'assets/images/project/3-MCSvr-0.webp'
 import Img4Arial0 from 'assets/images/project/4-Arial-0.webp'
 
 const projectConent = [
+  {
+    title: '方块元宇',
+    text: '方块元宇是⼀种结合航测技术和体素技术的数字重建新⽅案。',
+    img: Img1Zhongzhou0,
+    link: '#fangkuai',
+  },
   {
     title: '中州纪元',
     text: '中州纪元是一款国风开放世界 RPG 型 Minecraft 基岩版多人服务器，也是和瑛社主营的项目。',
