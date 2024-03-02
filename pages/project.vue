@@ -1,6 +1,7 @@
 <template>
   <div>
     <ProjectProjects />
+    <ProjectFangkuai />
     <ProjectZhongzhou />
     <ProjectMedia />
     <ProjectMCSvr />
