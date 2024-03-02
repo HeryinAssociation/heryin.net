@@ -15,12 +15,14 @@
       >
         <img class="h-24 w-24 rounded-full" :src="i.headSrc" />
         <div class="flex flex-col">
-          <p class="text-2xl font-bold leading-snug tracking-tight mt-4">
+          <p class="text-2xl font-bold tracking-tight mt-4">
             {{ i.name }}
           </p>
-          <p class="mt-4 text-gray-600">
-            {{ i.info }}
-          </p>
+          <ContentQuery :path="i.info" find="one" v-slot="{ data }">
+            <ContentRenderer :value="data">
+              <template #empty> </template>
+            </ContentRenderer>
+          </ContentQuery>
         </div>
       </div>
     </div>
@@ -45,4 +47,8 @@ type MemberField = {
 const prop = defineProps<{
   memberField: MemberField
 }>()
+
+onMounted(() => {
+  useHead({ title: '和瑛社' })
+})
 </script>

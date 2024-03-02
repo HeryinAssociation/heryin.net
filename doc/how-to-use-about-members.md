@@ -31,7 +31,7 @@
 
 程序将查找对应目录下**文件名首字母编码顺序第一**的 `.json` 文件，读取其中的 `title` 和 `description` 字段，用于指定成员域的标题、描述。
 
-至于 `.md` 文件，则读取其中的 `name`、`info`、`headSrc`、`index`，指定了成员名、成员信息、成员头像路径（无须 `/public/` 前缀，Nuxt 3 直接以 `public/` 为静态资源根目录）、顺序（升序，从小到大）。
+至于 `.md` 文件，则读取其中的 `name`、`headSrc`、`index` 以及文章内容，指定了成员名、成员头像路径（无须 `/public/` 前缀，Nuxt 3 直接以 `public/` 为静态资源根目录）、顺序（升序，从小到大）、成员信息。
 
 ## 最佳实践
 
@@ -40,5 +40,5 @@
 1. 在 `content/about/member/config/path.json` 指定目录名
 2. 在 `content/about/member/` 和 `public/images/about/member/` 下创建对应名称的目录，
 3. 在 content 新建的目录下新建一个 JSON 文件，指定 title 和 description。
-4. 在 content 新建的目录下新建若干个 Markdown，指定其 name、info、headSrc、index
+4. 在 content 新建的目录下新建若干个 Markdown，指定其 name、headSrc、index，并且直接在文章内填写内容。
 5. 在 public/images 新建的目录下放置指定清晰的头像图片文件（暂不支持 svg）。
