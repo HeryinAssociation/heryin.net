@@ -26,7 +26,9 @@ export default defineNuxtConfig({
       ],
     },
   },
-
+  content: {
+    documentDriven: true,
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -38,6 +40,6 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxt/image'],
 
   devtools: {
-    enabled: false,
+    enabled: true,
   },
 })

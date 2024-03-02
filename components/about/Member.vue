@@ -3,7 +3,7 @@
     <div class="flex flex-col justify-center">
       <div
         id="proser"
-        class="prose-headings:font-heryin prose-headings:text-center prose-headings:my-4 prose-h1:text-3xl prose-h1:md:text-4xl prose-h2:text-2xl prose-h2:md:text-3xl prose-p:my-4"
+        class="prose-headings:font-heryin prose-headings:text-center prose-headings:my-4 prose-h1:text-3xl prose-h1:md:text-4xl prose-h2:text-2xl prose-h2:md:text-3xl prose-p:my-2 prose-a:text-red-800"
       >
         <h1>成员组成</h1>
         <p>和瑛由许多友爱的伙伴们组成。</p>
@@ -59,10 +59,10 @@ for (const pathItem of pathConfig.value?.paths as Paths[]) {
       .findOne()
   )
   // 解析 JSON
-  const head = {
-    title: config.value!.title,
+  const head: MemberHead = {
+    title: config.value!.title!,
     description: config.value!.description,
-  } as MemberHead
+  }
 
   // 最终被用于 push 入 fieldList 的 field
   const field = {
@@ -78,12 +78,12 @@ for (const pathItem of pathConfig.value?.paths as Paths[]) {
   )
   // 解析 markdown 文件
   for (const memberRef of memberList.value!) {
-    const member = {
+    const member: Member = {
       name: memberRef.name,
-      info: memberRef.info,
+      info: memberRef._path,
       headSrc: memberRef.headSrc,
       index: memberRef.index,
-    } as Member
+    }
     field.memberList.push(member)
   }
   // 排序函数
