@@ -18,22 +18,24 @@
       </p>
     </div>
 
-    <PublicCarousel :contents="images" height="55vh" />
+    <PublicCarousel :contents="images" height="100vh" />
   </section>
 </template>
 
 <script setup lang="ts">
-import Img1Zhongzhou1 from 'assets/images/project/1-Zhongzhou-1.webp'
-import Img1Zhongzhou2 from 'assets/images/project/1-Zhongzhou-2.webp'
-import Img1Zhongzhou3 from 'assets/images/project/1-Zhongzhou-3.webp'
-import Img1Zhongzhou4 from 'assets/images/project/1-Zhongzhou-4.webp'
-import Img1Zhongzhou5 from 'assets/images/project/1-Zhongzhou-5.webp'
+import Img1Fangkuai0 from 'assets/images/project/1-Fangkuai-0.webp'
+import Img1Fangkuai1 from 'assets/images/project/1-Fangkuai-1.webp'
+import Img1Fangkuai2 from 'assets/images/project/1-Fangkuai-2.webp'
+import Img1Fangkuai3 from 'assets/images/project/1-Fangkuai-3.webp'
+import Img1Fangkuai4 from 'assets/images/project/1-Fangkuai-4.webp'
+import Img1Fangkuai5 from 'assets/images/project/1-Fangkuai-5.webp'
 
 const images = [
-  Img1Zhongzhou1,
-  Img1Zhongzhou2,
-  Img1Zhongzhou3,
-  Img1Zhongzhou4,
-  Img1Zhongzhou5,
+  Img1Fangkuai0,
+  Img1Fangkuai1,
+  Img1Fangkuai2,
+  Img1Fangkuai3,
+  Img1Fangkuai4,
+  Img1Fangkuai5,
 ]
 </script>

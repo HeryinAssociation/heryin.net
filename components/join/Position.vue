@@ -1,7 +1,7 @@
 <template>
   <PublicCarousel
     :contents="content"
-    height="55vh"
+    height="100vh"
     class="mt-5 mb-20"
   ></PublicCarousel>
 </template>

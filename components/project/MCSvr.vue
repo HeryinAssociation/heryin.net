@@ -10,7 +10,7 @@
       </p>
     </div>
 
-    <PublicCarousel :contents="content" prefix="mcsvr" height="75vh" />
+    <PublicCarousel :contents="content" prefix="mcsvr" height="100vh" />
   </section>
 </template>
 
@@ -36,9 +36,9 @@ const content = [
     img: Img3MCSvr2,
   },
   {
-    title: '夏纪社区',
-    text: `夏纪社区，由和瑛社代理承办的 MC 模组服务器。<br />
-    服务器采用 Fabric 服务端，搭载了地毯、机械动力、伊甸星环、农夫乐事、航空航天、死亡细胞等各类趣味模组。<br />
+    title: 'Calibur Pixel',
+    text: `Calibur Pixel 是一个和谐、友爱、可爱的公益插件服<br />
+    服务器已稳定运行5年，现由和瑛社提供服务端托管服务。<br />
     服务器搭载于高性能高带宽服务器，充分保障玩家游戏体验。`,
     img: Img3MCSvr3,
   },

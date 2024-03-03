@@ -10,7 +10,7 @@
       </p>
     </div>
 
-    <PublicCarousel :contents="content" height="75vh" />
+    <PublicCarousel :contents="content" height="100vh" />
   </section>
 </template>
 
