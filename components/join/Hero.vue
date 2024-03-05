@@ -40,7 +40,7 @@
               data-aos="zoom-y-out"
               data-aos-delay="150"
             >
-              我们需要诸如三维动画建模、动画师、文案编纂等方面的人才。
+              我们诚邀各专业、各领域志同道合的同学，以及广大社区创作者加入。
             </p>
             <div
               class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"

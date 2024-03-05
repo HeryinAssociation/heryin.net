@@ -1,6 +1,6 @@
 <template>
   <section class="my-20" id="zhongzhou">
-    <div class="my-10 mx-6 md:mx-20" data-aos="fade-right">
+    <div class="my-10 mx-6 md:mx-20 text-right" data-aos="fade-left">
       <h2 class="text-4xl md:text-5xl text-primary" style="font-family: Heryin">
         中州纪元
       </h2>

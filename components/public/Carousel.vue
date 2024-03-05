@@ -39,8 +39,12 @@
     <div
       class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
     >
-      <button class="btn btn-circle" @click="previouseTab">❮</button>
-      <button class="btn btn-circle" @click="nextTab">❯</button>
+      <!-- <button class="btn btn-circle" @click="previouseTab">❮</button>
+      <button class="btn btn-circle" @click="nextTab">❯</button> -->
+      <button type="button" class="btn btn-circle" @click="previousTab">
+        ❮
+      </button>
+      <button type="button" class="btn btn-circle" @click="nextTab">❯</button>
     </div>
     <div class="absolute w-full text-center bottom-2">
       <span
@@ -77,13 +81,25 @@ const props = withDefaults(defineProps<Props>(), {
 const currentTab = ref(0)
 const content = ref([props.contents[0]])
 
-function nextTab() {
-  currentTab.value = (currentTab.value + 1) % props.contents.length
-  content.value = [props.contents[currentTab.value]]
-}
-function previouseTab() {
+// function nextTab() {
+//   currentTab.value = (currentTab.value + 1) % props.contents.length
+//   content.value = [props.contents[currentTab.value]]
+// }
+// function previouseTab() {
+//   currentTab.value =
+//     (currentTab.value - 1 + props.contents.length) % props.contents.length
+//   content.value = [props.contents[currentTab.value]]
+// }
+function previousTab(event: MouseEvent): void {
+  event.preventDefault()
   currentTab.value =
     (currentTab.value - 1 + props.contents.length) % props.contents.length
+  content.value = [props.contents[currentTab.value]]
+}
+
+function nextTab(event: MouseEvent): void {
+  event.preventDefault()
+  currentTab.value = (currentTab.value + 1) % props.contents.length
   content.value = [props.contents[currentTab.value]]
 }
 </script>

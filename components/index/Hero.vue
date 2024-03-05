@@ -40,7 +40,7 @@
               data-aos="zoom-y-out"
               data-aos-delay="150"
             >
-              和瑛社是一个致力于桥接当代教育理论与实践的差距，通过实践学习来促进成员的个人全面发展的创新创业型社团。
+              和瑛社是一个致力于桥接理论与实践的差距，通过实践学习来促进成员的个人全面发展的创新创业型社团。
             </p>
             <div
               class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"

@@ -24,8 +24,8 @@ const projectConent = [
     link: '#zhongzhou',
   },
   {
-    title: '自媒体事业',
-    text: '我们运营自媒体账号，专注于产出高质量 Minecraft 实况、模组介绍、VR 视频等内容。',
+    title: '融媒体事业',
+    text: '和瑛社完善的视效工作流，丰富多彩的数字创意，赋能融媒体事业高质量发展，在多个平台设置官号。',
     img: Img2Media0,
     link: '#media',
   },

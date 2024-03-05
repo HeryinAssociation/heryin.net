@@ -18,7 +18,7 @@
         </blockquote>
         <div class="text-right font-medium text-gray-600 mt-2">
           <cite class="text-gray-900 not-italic"> 景晔 </cite>·
-          <a class="text-primary" href="#0"> 和瑛社主席 </a>
+          <a class="text-primary" href="#0"> 和瑛社创始人 </a>
         </div>
       </div>
     </div>

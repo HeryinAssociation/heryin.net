@@ -1,12 +1,12 @@
 <template>
   <section class="my-20" id="mcsvr">
-    <div class="my-10 mx-6 md:mx-20" data-aos="fade-right">
+    <div class="my-10 mx-6 md:mx-20 text-right" data-aos="fade-left">
       <h2 class="text-4xl md:text-5xl text-primary" style="font-family: Heryin">
         MC 服务器运维
       </h2>
       <p class="text-md md:text-xl">
-        除中州纪元外，和瑛还运营着和瑛领域、云南大学 Minecraft
-        服务器、夏纪社区等多个 MC 服务器。
+        除中州纪元外，和瑛还运维或托管着和瑛领域、云南大学 MC 服、<br />
+        南开大学MC服、Calibur Pixel 等多个 MC 服务器。<br />
       </p>
     </div>
 
