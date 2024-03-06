@@ -13,7 +13,7 @@
           class="text-gray-600 italic text-2xl"
           style="font-family: Heryin"
         >
-          “因此，今天，我们提出和瑛新的自我定位，也就是一个为<br />
+          “我们提出和瑛新的自我定位，也就是一个为<br />
           大学生提供实践机会的平台，一个理论与实践结合的实验场，<br />
           一个创新与团队精神共存的社区。”<br />
         </blockquote>
