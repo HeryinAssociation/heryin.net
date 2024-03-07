@@ -151,6 +151,10 @@ const NavBarList = [
     name: '关于',
     path: '/about',
   },
+  {
+    name: '和瑛联合验证',
+    path: 'https://skin.heryin.net/',
+  },
 ]
 const NavBarButton = {
   name: '加入我们',

@@ -20,8 +20,7 @@
             </h3>
             <NuxtLink
               class="btn btn-lg btn-wide text-primary bg-gradient-to-r from-red-100 to-white"
-              @click="showToast('联系邮箱：hr@heryin.net')"
-              to="mailto:hr@heryin.net"
+              to="https://heryinmc.feishu.cn/share/base/form/shrcnimDL1TpOgR4sjbzn0YENsb"
             >
               加入和瑛
             </NuxtLink>
