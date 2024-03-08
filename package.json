@@ -22,7 +22,7 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
     "aos": "^2.3.4",
-    "daisyui": "^2.50.1"
+    "daisyui": "^4.7.2"
   },
   "packageManager": "pnpm@7.27.0"
 }
