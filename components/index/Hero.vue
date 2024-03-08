@@ -14,7 +14,6 @@
           </div>
           <h1
             class="hidden md:flex md:justify-center text-7xl font-extrabold leading-tighter tracking-tighter mb-4"
-            data-aos="zoom-y-out"
           >
             <span
               style="font-family: 'Heryin'"
@@ -25,7 +24,6 @@
           </h1>
           <h1
             class="md:hidden text-5xl leading-normal font-extrabold leading-tighter tracking-tighter mb-4"
-            data-aos="zoom-y-out"
           >
             <span
               style="font-family: 'Heryin'"
@@ -35,17 +33,11 @@
             </span>
           </h1>
           <div class="max-w-3xl mx-auto">
-            <p
-              class="text-xl text-gray-600 mb-8"
-              data-aos="zoom-y-out"
-              data-aos-delay="150"
-            >
+            <p class="text-xl text-gray-600 mb-8">
               和瑛社是一个致力于桥接理论与实践的差距，通过实践学习来促进成员的个人全面发展的创新创业型社团。
             </p>
             <div
               class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
-              data-aos="zoom-y-out"
-              data-aos-delay="300"
             >
               <div>
                 <NuxtLink
