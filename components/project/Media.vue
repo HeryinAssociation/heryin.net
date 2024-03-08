@@ -1,6 +1,6 @@
 <template>
   <section class="my-20" id="media">
-    <div class="my-10 mx-6 md:mx-20" data-aos="fade-right">
+    <div class="my-10 mx-6 md:mx-20">
       <h2 class="text-4xl md:text-5xl text-primary" style="font-family: Heryin">
         融媒体事业
       </h2>
@@ -13,7 +13,6 @@
 
     <div
       class="flex flex-col md:flex-row mx-20 justify-center gap-x-10 gap-y-10 flex-nowrap"
-      data-aos-id-team
     >
       <!-- 外层容器，设置为flex布局，列方向排列，中等屏幕尺寸时变为行方向排列。外边距为mx-20（水平方向20）。
         居中对齐，项之间的间隙在x方向上为10，y方向上也为10，且不换行。data-aos-id-team是用于动画的锚点标记。 -->
@@ -22,8 +21,6 @@
         v-for="i in content"
         :key="i.link"
         class="md:w-1/3 py-6 card card-bordered"
-        data-aos="zoom-y-out"
-        data-aos-anchor="[data-aos-id-team]"
       >
         <!-- 内层循环容器，遍历content数组，每个元素命名为i。动态绑定:key为i.link。
           设置在中等屏幕宽度下宽度为容器的三分之一，y方向内边距为6。应用card和card-bordered样式。
