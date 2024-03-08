@@ -31,7 +31,7 @@ type tabItem = {
 
 const TabBarList = reactive<tabItem[]>([
   {
-    name: '发展历程',
+    name: '组织沿革',
     componentName: 'AboutHistory',
     selected: false,
   },

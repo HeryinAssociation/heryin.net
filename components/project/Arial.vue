@@ -1,6 +1,6 @@
 <template>
   <section class="my-20" id="arial">
-    <div class="my-10 mx-6 md:mx-20 text-right" data-aos="fade-left">
+    <div class="my-10 mx-6 md:mx-20 text-right">
       <h2 class="text-4xl md:text-5xl text-primary" style="font-family: Heryin">
         航测建模及制图
       </h2>
@@ -10,7 +10,7 @@
       </p>
     </div>
 
-    <PublicCarousel :contents="content" height="75vh" />
+    <PublicCarousel :contents="content" height="100vh" />
   </section>
 </template>
 

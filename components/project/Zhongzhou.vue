@@ -1,6 +1,6 @@
 <template>
   <section class="my-20" id="zhongzhou">
-    <div class="my-10 mx-6 md:mx-20" data-aos="fade-right">
+    <div class="my-10 mx-6 md:mx-20 text-right">
       <h2 class="text-4xl md:text-5xl text-primary" style="font-family: Heryin">
         中州纪元
       </h2>
@@ -17,7 +17,7 @@
       </p>
     </div>
 
-    <PublicCarousel :contents="images" height="55vh" />
+    <PublicCarousel :contents="images" height="100vh" />
   </section>
 </template>
 

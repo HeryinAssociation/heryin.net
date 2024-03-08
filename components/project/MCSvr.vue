@@ -1,16 +1,16 @@
 <template>
   <section class="my-20" id="mcsvr">
-    <div class="my-10 mx-6 md:mx-20" data-aos="fade-right">
+    <div class="my-10 mx-6 md:mx-20 text-right">
       <h2 class="text-4xl md:text-5xl text-primary" style="font-family: Heryin">
         MC 服务器运维
       </h2>
       <p class="text-md md:text-xl">
-        除中州纪元外，和瑛还运营着和瑛领域、云南大学 Minecraft
-        服务器、夏纪社区等多个 MC 服务器。
+        除中州纪元外，和瑛还运维或托管着和瑛领域、云南大学 MC 服、<br />
+        南开大学MC服、Calibur Pixel 等多个 MC 服务器。<br />
       </p>
     </div>
 
-    <PublicCarousel :contents="content" prefix="mcsvr" height="75vh" />
+    <PublicCarousel :contents="content" prefix="mcsvr" height="100vh" />
   </section>
 </template>
 
@@ -36,9 +36,9 @@ const content = [
     img: Img3MCSvr2,
   },
   {
-    title: '夏纪社区',
-    text: `夏纪社区，由和瑛社代理承办的 MC 模组服务器。<br />
-    服务器采用 Fabric 服务端，搭载了地毯、机械动力、伊甸星环、农夫乐事、航空航天、死亡细胞等各类趣味模组。<br />
+    title: 'Calibur Pixel',
+    text: `Calibur Pixel 是一个和谐、友爱、可爱的公益插件服<br />
+    服务器已稳定运行5年，现由和瑛社提供服务端托管服务。<br />
     服务器搭载于高性能高带宽服务器，充分保障玩家游戏体验。`,
     img: Img3MCSvr3,
   },
