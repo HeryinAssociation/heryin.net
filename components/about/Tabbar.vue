@@ -2,20 +2,19 @@
   <section class="max-w-6xl h-12 md:h-16 mx-auto border-b border-gray-200 flex">
     <ul class="flex flex-wrap grow justify-around items-center">
       <li v-for="i in TabBarList" :key="i.name">
-        <div
-          class="text-sm md:text-xl transition duration-300 ease-in-out hover:text-red-700 cursor-pointer"
-          @click="onChangeTab(i)"
-        >
-          <span v-if="i.selected" class="text-red-500">
-            {{ i.name }}
-          </span>
-          <span v-else>
+        <div class="text-sm md:text-xl" @click="onChangeTab(i)">
+          <span
+            class="transition duration-300 ease-in-out cursor-pointer"
+            :class="{
+              'text-red-500': i.selected,
+              'hover:text-red-700': !i.selected,
+            }"
+          >
             {{ i.name }}
           </span>
         </div>
       </li>
     </ul>
-    <div class=""></div>
   </section>
 </template>
 

@@ -10,7 +10,6 @@
         <template v-for="field of fieldList">
           <AboutMemberItem :member-field="field" />
         </template>
-        <!-- <AboutMemberItem :member-head="coreMemberField" /> -->
       </div>
     </div>
   </div>
