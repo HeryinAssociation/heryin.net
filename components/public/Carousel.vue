@@ -18,7 +18,6 @@
             <div
               v-if="typeof i !== 'string'"
               class="absolute transform bottom-0 w-full py-20 px-6 md:px-20 bg-gradient-to-t from-red-900"
-              data-aos="zoom-y-out"
             >
               <h1
                 :class="{

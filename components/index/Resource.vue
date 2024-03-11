@@ -11,7 +11,6 @@
         <div class="md:grid md:grid-cols-12 md:gap-6">
           <div
             class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
-            data-aos="fade-right"
           >
             <div class="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
               <h3 class="h3 mb-3">我们的优势</h3>
@@ -53,7 +52,6 @@
 
           <div
             class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
-            data-aos="zoom-y-out"
           >
             <div
               class="relative flex flex-col text-center lg:text-right overflow-hidden"

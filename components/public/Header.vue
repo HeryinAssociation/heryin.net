@@ -149,7 +149,7 @@ const NavBarList = [
   },
   {
     name: '关于',
-    path: '/about',
+    path: '/about/History', // 关于界面采用父子路径实现，因此直接导向到子页面
   },
   {
     name: '和瑛联合验证',

@@ -1,6 +1,6 @@
 <template>
   <section class="my-20" id="fangkuai">
-    <div class="my-10 mx-6 md:mx-20" data-aos="fade-left">
+    <div class="my-10 mx-6 md:mx-20">
       <h2 class="text-4xl md:text-5xl text-primary" style="font-family: Heryin">
         方块元宇
       </h2>
