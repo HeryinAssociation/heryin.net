@@ -21,7 +21,8 @@
             <li v-for="i in NavBarList" :key="i.name">
               <NuxtLink
                 :to="i.path"
-                class="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                class="text-gray-600 hover:text-red-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                active-class="text-red-600 font-bold"
               >
                 {{ i.name }}
               </NuxtLink>
@@ -149,7 +150,7 @@ const NavBarList = [
   },
   {
     name: '关于',
-    path: '/about/History', // 关于界面采用父子路径实现，因此直接导向到子页面
+    path: '/about',
   },
   {
     name: '和瑛联合验证',

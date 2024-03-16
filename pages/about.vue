@@ -28,7 +28,7 @@
 <script setup lang="ts">
 // 动态组件
 onMounted(() => {
-  navigateTo('/about/History')
+  navigateTo('/about/history')
 })
 
 type tabItem = {
@@ -40,12 +40,12 @@ type tabItem = {
 const pageList = reactive<tabItem[]>([
   {
     name: '组织沿革',
-    path: '/about/History',
+    path: '/about/history',
     selected: false,
   },
   {
     name: '成员组成',
-    path: '/about/Member',
+    path: '/about/member',
     selected: false,
   },
   {
