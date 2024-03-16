@@ -3,12 +3,9 @@
     class="w-full relative overflow-hidden"
     :style="`height: ${props.height};`"
   >
-    <TransitionGroup name="list">
-      <div
-        v-for="(i, index) in content"
-        :key="typeof i === 'string' ? i : i.title"
-      >
-        <NuxtLink :to="typeof i === 'string' ? '' : i.link">
+    <template v-for="(i, index) in contents">
+      <Transition :name="transitionName" mode="out-in">
+        <NuxtLink v-if="currentTab === index" class="w-full" :to="typeof i === 'string' ? '' : i.link">
           <div
             class="relative w-full bg-cover bg-center flex-none"
             :style="`background-image: url(${
@@ -33,16 +30,12 @@
             </div>
           </div>
         </NuxtLink>
-      </div>
-    </TransitionGroup>
+      </Transition>
+    </template>
     <div
       class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
     >
-      <!-- <button class="btn btn-circle" @click="previouseTab">❮</button>
-      <button class="btn btn-circle" @click="nextTab">❯</button> -->
-      <button type="button" class="btn btn-circle" @click="previousTab">
-        ❮
-      </button>
+      <button type="button" class="btn btn-circle" @click="previousTab">❮</button>
       <button type="button" class="btn btn-circle" @click="nextTab">❯</button>
     </div>
     <div class="absolute w-full text-center bottom-2">
@@ -78,47 +71,38 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const currentTab = ref(0)
-const content = ref([props.contents[0]])
 
-// function nextTab() {
-//   currentTab.value = (currentTab.value + 1) % props.contents.length
-//   content.value = [props.contents[currentTab.value]]
-// }
-// function previouseTab() {
-//   currentTab.value =
-//     (currentTab.value - 1 + props.contents.length) % props.contents.length
-//   content.value = [props.contents[currentTab.value]]
-// }
 function previousTab(event: MouseEvent): void {
   event.preventDefault()
-  currentTab.value =
-    (currentTab.value - 1 + props.contents.length) % props.contents.length
-  content.value = [props.contents[currentTab.value]]
+  currentTab.value = (currentTab.value - 1 + props.contents.length) % props.contents.length
 }
 
 function nextTab(event: MouseEvent): void {
   event.preventDefault()
   currentTab.value = (currentTab.value + 1) % props.contents.length
-  content.value = [props.contents[currentTab.value]]
 }
+
+const transitionName = ref('slide-right')
+
+watch(currentTab, (val, old) => {
+  transitionName.value = val > old ? 'slide-left' : 'slide-right'
+})
 </script>
 
 <style scoped>
-.list-enter-to {
-  transition: all 1s ease;
-  transform: translateX(0);
-}
-
-.list-leave-active {
-  transition: all 1s ease;
+.slide-right-enter-from,
+.slide-left-leave-to {
   transform: translateX(-100%);
 }
-
-.list-enter {
+.slide-left-enter-from,
+.slide-right-leave-to {
   transform: translateX(100%);
 }
-
-.list-leave {
-  transform: translateX(0);
+.slide-right-leave-active,
+.slide-right-enter-active,
+.slide-left-leave-active,
+.slide-left-enter-active {
+  transition: transform 0.5s;
+  position: absolute;
 }
 </style>
