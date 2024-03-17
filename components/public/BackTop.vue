@@ -1,7 +1,7 @@
 <template>
   <Transition>
     <button
-      class="h-16 w-16 shadow-xl rounded-full border-none btn-primary fixed bottom-10 right-10 z-50"
+      class="h-16 w-16 shadow-xl rounded-full border-none bg-red-600 fixed bottom-10 right-10 z-50"
       v-show="btnFlag"
       @click="backTop"
     >
