@@ -7,14 +7,43 @@
       >
         <h1>成员组成</h1>
         <p>和瑛由许多友爱的伙伴们组成。</p>
-        <template v-for="field of fieldList">
-          <AboutMemberItem :member-field="field" />
-        </template>
+        <div>
+          <div>
+            <!-- 遍历部门 -->
+            <div
+              v-for="(department, index) in departments"
+              :key="index"
+              class="department-section my-8"
+            >
+              <div class="head">
+                <h2>{{ department.title }}</h2>
+                <p>{{ department.description }}</p>
+              </div>
+              <div
+                class="cardContainer mx-auto py-8 max-w-md sm:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-start"
+              >
+                <!-- 遍历该部门的成员 -->
+                <div
+                  v-for="member in department.members"
+                  :key="member.index"
+                  class="card relative bg-gray-100 flex gap-x-4 sm:flex-col items-center bg-base-white shadow-xl h-48 sm:h-96 xl:h-80 p-4 sm:p-6"
+                >
+                  <img class="h-24 w-24 rounded-full" :src="member.headSrc" />
+                  <div class="flex flex-col">
+                    <p class="text-2xl font-bold tracking-tight mt-4">
+                      {{ member.name }}
+                    </p>
+                    <p>{{ member.info }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
-
 <script setup lang="ts">
 type Member = {
   name: string
@@ -22,71 +51,56 @@ type Member = {
   headSrc: string
   index: number
 }
-type MemberHead = {
+type Department = {
   title: string
   description: string
-}
-type MemberField = {
-  head: MemberHead
-  memberList: Member[]
-}
-type Paths = {
-  path: string
+  members: Member[]
 }
 
-// 对象数组中用于 sort 方法的排序函数
-const sortBy = (attr: string, rev = 1) => {
-  return (a: any, b: any) => rev * (a[attr] - b[attr])
-}
+const departments: Department[] = [
+  {
+    title: '部门一',
+    description: '部门一的描述',
+    members: [
+      {
+        name: '成员A',
+        info: '成员A的信息',
+        headSrc: '/path/to/imageA',
+        index: 1,
+      },
+      // 部门一的其他成员
+    ],
+  },
+  {
+    title: '部门二',
+    description: '部门二的描述',
+    members: [
+      {
+        name: '成员B',
+        info: '成员B的信息',
+        headSrc: '/path/to/imageB',
+        index: 2,
+      },
+      // 部门二的其他成员
+    ],
+  },
+  {
+    title: '部门三',
+    description: '部门三的描述',
+    members: [
+      {
+        name: '成员C',
+        info: '成员C的信息',
+        headSrc: '/path/to/imageC',
+        index: 3,
+      },
+      // 部门三的其他成员
+    ],
+  },
+  // 可以继续添加更多部门
+]
 
-// 获取 /content/about/member/config 的第一个 json 内容（也即 paths.json）
-const { data: pathConfig } = await useAsyncData('path', () =>
-  queryContent('about', 'member', 'config')
-    .where({ _type: { $eq: 'json' } })
-    .findOne()
-)
-
-// 用于渲染的列表
-const fieldList = [] as MemberField[]
-
-// 从获取的列表中循环获取 MemberHead 信息和 Member[] 信息
-for (const pathItem of pathConfig.value?.paths as Paths[]) {
-  // 从 JSON 文件获取 MemberHead
-  const { data: config } = await useAsyncData('conf', () =>
-    queryContent('about', 'member', pathItem.path)
-      .where({ _type: { $eq: 'json' } })
-      .findOne()
-  )
-  // 解析 JSON
-  const head: MemberHead = {
-    title: config.value!.title!,
-    description: config.value!.description,
-  }
-
-  // 最终被用于 push 入 fieldList 的 field
-  const field = {
-    head: head,
-    memberList: [] as Member[],
-  } as MemberField
-
-  // 从 Markdown 文件中获取 Member[]
-  const { data: memberList } = await useAsyncData('memberList', () =>
-    queryContent('about', 'member', pathItem.path)
-      .where({ _type: { $eq: 'markdown' } })
-      .find()
-  )
-  // 解析 markdown 文件
-  for (const memberRef of memberList.value!) {
-    const member: Member = {
-      name: memberRef.name,
-      info: memberRef._path,
-      headSrc: memberRef.headSrc,
-      index: memberRef.index,
-    }
-    field.memberList.push(member)
-  }
-  // 排序函数
-  field.memberList.sort(sortBy('index'))
-  fieldList.push(field)
-}
+onMounted(() => {
+  useHead({ title: '和瑛社' })
+})
 </script>

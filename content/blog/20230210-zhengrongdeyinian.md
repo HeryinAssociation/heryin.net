@@ -15,8 +15,6 @@ description: 在辞旧迎新之际，回顾过去，展望未来。
 
 ### <center>2 月 "弘业一号"工作站上线 图为组装现场 自左至右：纾浚 抖飞 早餐机
 
-### <center>自媒体事业稳步发展 精彩纷呈的 Minecraft 模组介绍视频
-
 ![图](/blogimg/20230210-zhengrongdeyinian/5/sh8.webp)
 
 ### <center>5 月 1 日 劳动节 和瑛上海之行
@@ -32,6 +30,8 @@ description: 在辞旧迎新之际，回顾过去，展望未来。
 ![图](/blogimg/20230210-zhengrongdeyinian/6/ynu3.webp)
 
 ### <center>“像素云大” 云南大学复原工程稳步推进
+
+![图](/assets/images/project/MyUniv.webp)
 
 ### <center>6 月 和瑛首次登上央视
 
