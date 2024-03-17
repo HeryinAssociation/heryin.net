@@ -144,7 +144,8 @@ const content = [
     items: [
       { name: '中州纪元', link: 'https://mc.heryin.net' },
       { name: '咔哩吧', link: 'https://mc.calibur.tv/' },
-      { name: '中国Minecraft高校联盟', link: 'https://www.mualliance.cn/' },
+      { name: '中国 MC 高联', link: 'https://www.mualliance.cn/' },
+      { name: '南开大学 MC 社区', link: 'https://mcnku.net/' },
     ],
   },
 ]
