@@ -7,25 +7,34 @@
       项目案例
     </h1>
     <div
-      class="card w-11/12 md:w-3/5 lg:1/2 bg-gray-100 shadow-sm hover:shadow-md transition duration-500 ease-in-out m-2"
+      class="w-11/12 md:w-3/5 lg:1/2 bg-gray-100 shadow-sm hover:shadow-md transition duration-500 ease-in-out m-2"
       v-for="article in list"
       :key="article.link"
     >
-      <NuxtLink :to="article.link">
-        <div class="card-body">
+      <NuxtLink
+        :to="article.link"
+        class="grid grid-cols-12 md:h-36 sm:h-24 items-center"
+      >
+        <div class="w-full h-full object-cover overflow-hidden col-span-4">
+          <img
+            :src="article.cover || '/blogimg/default-cover.webp'"
+            alt="项目封面"
+            class="object-cover items-center"
+          />
+        </div>
+        <div class="col-span-8 p-2 pl-4 lg:pl-8">
           <h2
-            class="card-title text-primary text-2xl md:text-3xl leading-tight"
+            class="text-primary text-xl md:text-2xl"
             style="font-family: Heryin"
           >
             {{ article.title }}
           </h2>
-          <p class="text-gray-600 text-sm mb-2">
+          <p class="text-gray-600 text-sm">
             发表于 {{ article.date.toLocaleDateString() }}
           </p>
-          <p>{{ article.desc }}</p>
-          <div class="card-actions justify-end">
-            <!-- <button class="link link-primary">阅读全文</button> -->
-          </div>
+          <p class="text-gray-600 text-sm">
+            {{ article.desc }}
+          </p>
         </div>
       </NuxtLink>
     </div>
@@ -38,6 +47,7 @@ type Article = {
   date: Date
   desc: string
   link: string
+  cover: string
 }
 
 const contentQuery = await queryContent('/project').find()
@@ -49,16 +59,11 @@ for (const article of contentQuery) {
   const slug = contentPath.replace('/project/', '') || ''
   const link = `/project/${slug}`
 
-  // 调试信息
-  console.log('Article:', article)
-  console.log('_file:', article._file)
-  console.log('Generated slug:', slug)
-  console.log('Generated link:', link)
-
   list.push({
     title: article.title || '无标题',
     date: new Date(article.date),
     desc: article.description,
+    cover: article.cover || '',
     link: link,
   })
 }

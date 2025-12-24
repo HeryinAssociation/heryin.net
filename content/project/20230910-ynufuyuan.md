@@ -1,6 +1,7 @@
 ---
 date: 2023-09-10
 description: “像素云大” 项目是在和瑛社大力支持下的云南大学校园复原工程。
+cover: /blogimg/20230910-ynufuyuan/YNU01.webp
 ---
 
 # “像素云大” 项目案例
