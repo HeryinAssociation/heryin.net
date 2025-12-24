@@ -5,7 +5,11 @@
   >
     <template v-for="(i, index) in contents">
       <Transition :name="transitionName" mode="out-in">
-        <NuxtLink v-if="currentTab === index" class="w-full" :to="typeof i === 'string' ? '' : i.link">
+        <NuxtLink
+          v-if="currentTab === index"
+          class="w-full"
+          :to="typeof i === 'string' ? '' : i.link"
+        >
           <div
             class="relative w-full bg-cover bg-center flex-none"
             :style="`background-image: url(${
@@ -14,7 +18,7 @@
           >
             <div
               v-if="typeof i !== 'string'"
-              class="absolute transform bottom-0 w-full py-20 px-6 md:px-20 bg-gradient-to-t from-red-900"
+              class="absolute transform bottom-0 w-full py-20 px-6 md:px-20 bg-gradient-to-t from-gray-950"
             >
               <h1
                 :class="{
@@ -35,7 +39,9 @@
     <div
       class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
     >
-      <button type="button" class="btn btn-circle" @click="previousTab">❮</button>
+      <button type="button" class="btn btn-circle" @click="previousTab">
+        ❮
+      </button>
       <button type="button" class="btn btn-circle" @click="nextTab">❯</button>
     </div>
     <div class="absolute w-full text-center bottom-2">
@@ -74,7 +80,8 @@ const currentTab = ref(0)
 
 function previousTab(event: MouseEvent): void {
   event.preventDefault()
-  currentTab.value = (currentTab.value - 1 + props.contents.length) % props.contents.length
+  currentTab.value =
+    (currentTab.value - 1 + props.contents.length) % props.contents.length
 }
 
 function nextTab(event: MouseEvent): void {

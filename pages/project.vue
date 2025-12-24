@@ -1,10 +1,15 @@
 <template>
-  <div>
+  <div v-if="!isProjectDetailPage">
     <ProjectProjects />
-    <ProjectFangkuai />
-    <ProjectZhongzhou />
-    <ProjectMedia />
-    <ProjectMCSvr />
-    <ProjectArial />
+  </div>
+  <div>
+    <NuxtPage />
   </div>
 </template>
+
+<script setup lang="ts">
+const route = useRoute()
+const isProjectDetailPage = computed(() => {
+  return route.path.startsWith('/project/') && route.path !== '/project'
+})
+</script>

@@ -1,9 +1,8 @@
 <template>
   <div>
     <IndexHero />
-    <IndexResource />
-    <IndexProject />
-    <IndexSummary />
+    <IndexJiazhilinian />
+    <IndexLunbotu />
     <IndexCta />
   </div>
 </template>

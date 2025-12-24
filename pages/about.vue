@@ -44,13 +44,13 @@ const pageList = reactive<tabItem[]>([
     selected: false,
   },
   {
-    name: '成员组成',
+    name: '社团应用',
     path: '/about/member',
     selected: false,
   },
   {
-    name: '加入我们',
-    path: '/join',
+    name: '其他',
+    path: '/about/partner',
     selected: false,
   },
 ])

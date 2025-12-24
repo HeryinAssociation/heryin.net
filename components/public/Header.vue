@@ -145,15 +145,11 @@ const NavBarList = [
     path: '/project',
   },
   {
-    name: '博客',
-    path: '/blog',
-  },
-  {
     name: '关于',
     path: '/about',
   },
   {
-    name: '和瑛联合验证',
+    name: '公告',
     path: 'https://skin.heryin.net/',
   },
 ]

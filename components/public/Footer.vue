@@ -18,14 +18,14 @@
               to="#"
               class="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
             >
-              条款
+              终日乾乾
             </NuxtLink>
             ·
             <NuxtLink
               to="#"
               class="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
             >
-              隐私协议
+              与时偕行
             </NuxtLink>
           </div>
         </div>
@@ -53,9 +53,6 @@
         <!-- Last block -->
         <div class="sm:col-span-6 md:col-span-3 lg:col-span-3">
           <h6 class="text-gray-800 font-medium mb-2">动态订阅</h6>
-          <p class="text-sm text-gray-600 mb-4">
-            定期将最新动态和文章发送到您的收件箱。
-          </p>
           <form>
             <div class="flex flex-wrap mb-4">
               <div class="w-full">
@@ -105,7 +102,7 @@
       >
         <div class="text-sm text-gray-600 mr-4 content-start">
           2018-{{ new Date().getFullYear() }}{{ ' ' }}
-          <strong>和瑛社团 &copy; 版权所有</strong>
+          <strong>和瑛社 &copy; 版权所有</strong>
         </div>
         <div class="text-sm text-gray-600 mr-4 content-end">
           <NuxtLink to="https://beian.miit.gov.cn" target="_blank">
@@ -122,18 +119,23 @@ import Logo from 'assets/images/public/heryin-logo.svg'
 
 const content = [
   {
-    title: '和瑛社区',
+    title: '和瑛社',
     items: [
-      { name: '全部项目', link: '/project' },
       { name: '加入我们', link: '/join' },
-      { name: '联系我们', link: 'mailto:mail@heryin.net' },
+      { name: '联系我们', link: 'mailto:heryin@email.cn' },
     ],
   },
   {
     title: '社交媒体',
     items: [
-      { name: '哔哩哔哩', link: 'https://space.bilibili.com/59979451' },
-      { name: '微博', link: 'https://weibo.com/u/7775335967' },
+      {
+        name: '学术茶楼',
+        link: 'https://mp.weixin.qq.com/s/G9uXYGW3YH6Jx6xQD6qX7g',
+      },
+      {
+        name: '微信公众号',
+        link: 'https://mp.weixin.qq.com/s/yrXNzu0SNhYH9UB9BJpbgA',
+      },
       // { name: 'YouTube', link: '' },
       // { name: 'Instagram', link: '' },
       // { name: 'Twitter', link: '' },
@@ -142,10 +144,10 @@ const content = [
   {
     title: '友情链接',
     items: [
-      { name: '中州纪元', link: 'https://mc.heryin.net' },
-      { name: '咔哩吧', link: 'https://mc.calibur.tv/' },
-      { name: '中国 MC 高联', link: 'https://www.mualliance.cn/' },
-      { name: '南开大学 MC 社区', link: 'https://mcnku.net/' },
+      { name: 'Calibur Pixel', link: 'https://mc.calibur.tv/' },
+      { name: '', link: '' },
+      { name: '', link: '' },
+      { name: 'NKUMC', link: 'https://mcnku.net/' },
     ],
   },
 ]

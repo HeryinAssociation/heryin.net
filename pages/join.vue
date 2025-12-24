@@ -2,7 +2,7 @@
   <div>
     <JoinHero />
     <JoinQoute />
-    <JoinPosition id="position" />
+    <IndexLunbotu />
     <JoinQoute2 />
     <JoinSummary />
   </div>
