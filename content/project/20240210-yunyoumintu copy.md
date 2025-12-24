@@ -1,6 +1,7 @@
 ---
 date: 2024-02-10
 description: “云游闵图” 项目是和瑛社数字重建实践的一大重要成果
+cover: /blogimg/20240123-yunyoumintu/mt-_1_.webp
 ---
 
 # “云游闵图” 项目案例

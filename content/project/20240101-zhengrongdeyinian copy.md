@@ -1,6 +1,7 @@
 ---
 date: 2024-01-01
 description: 在辞旧迎新之际，回顾过去，展望未来。
+cover: /blogimg/20230210-zhengrongdeyinian/heying-nian.webp
 ---
 
 # <center>峥嵘的一年——和瑛社 2023 剪影
