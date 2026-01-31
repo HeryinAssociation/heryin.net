@@ -76,14 +76,14 @@ const departments: Department[] = [
       {
         name: '飞书Lark',
         info: '和瑛社OA、内部办公协同系统',
-        headSrc: '/images/about/member/core/zhang.png',
+        headSrc: '/images/about/app/1feishu.png',
         index: 2,
         lianjie: 'https://heryin.feishu.cn/',
       },
       {
         name: '文件中心',
         info: '和瑛社文件中心、信息资源中心',
-        headSrc: '/images/about/member/core/shujun.png',
+        headSrc: '/images/about/app/2fnos.png',
         index: 3,
         lianjie: 'https://heryin.fnos.net/',
       },
