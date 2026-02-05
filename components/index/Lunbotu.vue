@@ -5,31 +5,25 @@
 </template>
 
 <script setup lang="ts">
-import Img1Lunbotu0 from 'assets/images/Index/Lunbotu/1.png'
-import Img1Lunbotu1 from 'assets/images/Index/Lunbotu/2.png'
-import Img1Lunbotu2 from 'assets/images/Index/Lunbotu/3.png'
-import Img1Lunbotu3 from 'assets/images/Index/Lunbotu/4.png'
+import Img1Lunbotu0 from 'assets/images/Index/Lunbotu/1.webp'
+import Img1Lunbotu1 from 'assets/images/Index/Lunbotu/2.webp'
+import Img1Lunbotu2 from 'assets/images/Index/Lunbotu/3.webp'
 
 const content = [
   {
-    title: '科学研究',
-    text: `数字重建体素模型外景`,
+    title: '创意项目',
+    text: `融合跨校跨专业创意视角，孵化落地兼具创新与实践的特色项目，让创意转化为实际成果。`,
     img: Img1Lunbotu0,
   },
   {
     title: '学研实践',
-    text: `云大校园复原工程，数字重建项目。`,
+    text: `联动高校科研资源，以社会实践、创新竞赛、学术交流为载体，推动理论知识向实践能力转化，搭建学用结合平台。`,
     img: Img1Lunbotu1,
   },
   {
-    title: '成果转化',
-    text: `经过航空制图所得校园数字地表模型和正射影像`,
+    title: '创新创业',
+    text: `整合高校、行业资源，提供指导、打磨、资源对接全支持，将创意成果、学研收获转化为商业项目，开展创新创业实践`,
     img: Img1Lunbotu2,
-  },
-  {
-    title: '组织风采',
-    text: `闵行图书馆儿童区数字重建`,
-    img: Img1Lunbotu3,
   },
 ]
 </script>

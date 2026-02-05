@@ -1,10 +1,10 @@
 <template>
   <!-- 外层容器：相对定位、全宽背景、允许鼠标事件、底部留白 -->
   <!-- 外层容器：相对定位、全宽背景、允许鼠标事件、底部留白 -->
-  <section class="relative bg-gray-100 pointer-events-auto">
+  <section class="relative bg-white pointer-events-auto">
     <div id="how-to-work" class="relative max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="pt-12 md:pt-20 pb-12 md:pb-20">
-        <div class="mb-8">
+      <div class="pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-20">
+        <div class="mb-8 px-6 sm:px-10 md:px-0">
           <h3 class="h3 mb-3">我们的价值理念</h3>
           <p class="text-xl text-gray-600">
             在长期的实践和探索中, 和瑛社逐渐形成了具有特色的组织理念。
@@ -14,7 +14,7 @@
           <div
             class="max-w-xl md:max-w-none md:w-full md:col-span-8 lg:col-span-7"
           >
-            <div class="mb-8 md:mb-0 md:pr-24">
+            <div class="mb-8 md:mb-0 md:pr-24 px-6 sm:px-10 md:px-0">
               <button
                 v-for="(i, index) in tabContent"
                 :key="i.title"
@@ -50,7 +50,7 @@
             class="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-4 lg:col-span-5 mb-8 md:mb-0 md:order-1"
           >
             <div
-              class="relative flex flex-col text-center lg:text-right overflow-hidden"
+              class="relative flex flex-col text-center lg:text-right overflow-hidden px-6 sm:px-10 md:px-0"
               style="height: 500px; width: 500px; max-width: 100%"
             >
               <Transition

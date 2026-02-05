@@ -1,7 +1,7 @@
 <template>
   <header
-    :class="`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
-      top ? '' : 'bg-white backdrop-blur-sm shadow-lg'
+    :class="`fixed w-full z-30 transition duration-300 ease-in-out ${
+      top ? 'bg-white' : 'bg-white backdrop-blur-sm shadow-lg md:bg-opacity-90'
     }`"
   >
     <div class="max-w-6xl mx-auto px-5 sm:px-6">
@@ -130,6 +130,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
 import Logo from 'assets/images/public/heryin-logo.svg'
 
 const top = ref(true)
@@ -141,16 +142,12 @@ const NavBarList = [
     path: '/',
   },
   {
-    name: '项目',
+    name: '事业',
     path: '/project',
   },
   {
     name: '关于',
     path: '/about',
-  },
-  {
-    name: '公告',
-    path: 'https://skin.heryin.net/',
   },
 ]
 const NavBarButton = {

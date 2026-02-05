@@ -101,7 +101,7 @@
         class="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200"
       >
         <div class="text-sm text-gray-600 mr-4 content-start">
-          2018-{{ new Date().getFullYear() }}{{ ' ' }}
+          2019-{{ new Date().getFullYear() }}{{ ' ' }}
           <strong>和瑛社 &copy; 版权所有</strong>
         </div>
         <div class="text-sm text-gray-600 mr-4 content-end">
