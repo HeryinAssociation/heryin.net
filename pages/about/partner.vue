@@ -22,7 +22,7 @@
         <!-- 书籍 -->
         <NuxtLink :to="item.link" class="book-link">
           <!-- 书脊 -->
-          <div class="book-spine">
+          <div class="book-spine card">
             <!-- 年份 -->
             <div class="book-year">
               {{ item.year }}
@@ -67,7 +67,6 @@
 /* 书脊 */
 .book-spine {
   background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
-  border-radius: 4px 4px 12px 12px;
   padding: 1.25rem 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.15);
   position: relative;
