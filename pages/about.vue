@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen bg-gray-100 animate-in fade-in slide-up duration-700"
+    class="min-h-screen bg-gray-100 animate-in fade-in slide-up duration-700 mt-16 md:mt-20"
   >
     <MemoryMemories />
     <section
@@ -27,10 +27,6 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, reactive, ref } from 'vue'
-import { navigateTo } from 'nuxt/app'
-import MemoryMemories from '~/components/memory/Memories.vue'
-
 onMounted(() => {
   navigateTo('/about/history')
 

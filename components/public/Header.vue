@@ -1,7 +1,7 @@
 <template>
   <header
     :class="`fixed w-full z-30 transition duration-300 ease-in-out ${
-      top ? 'bg-white' : 'bg-white backdrop-blur-sm shadow-lg md:bg-opacity-90'
+      top ? 'bg-white backdrop-blur-sm md:bg-opacity-90' : 'bg-white backdrop-blur-sm shadow-lg md:bg-opacity-90'
     }`"
   >
     <div class="max-w-6xl mx-auto px-5 sm:px-6">
