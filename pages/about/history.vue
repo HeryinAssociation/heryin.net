@@ -12,7 +12,7 @@
     <!-- 时间线容器 -->
     <div class="timeline-container relative pl-10 ml-20">
       <!-- 时间线竖线 -->
-      <div class="absolute top-0 left-3 w-0.5 h-full bg-gray-200 z-10"></div>
+      <div class="absolute top-0 left-3 w-0.5 h-full bg-gray-200 -z-1"></div>
 
       <!-- 循环渲染时间线项目 -->
       <div
@@ -28,7 +28,7 @@
       >
         <!-- 节点圆点 -->
         <div
-          class="absolute top-0 left-[-40px] w-6 h-6 rounded-full border-4 border-red-100 z-20 flex items-center justify-center"
+          class="absolute top-0 left-[-39px] w-6 h-6 rounded-full border-4 border-red-100 flex items-center justify-center"
           :class="item.isLast ? 'bg-red-700' : 'bg-red-600'"
         >
           <div class="w-2 h-2 rounded-full bg-white animate-pulse"></div>
