@@ -44,25 +44,49 @@ interface Photo {
   alt: string
 }
 
-// 直接使用 queryContent 获取 memories.md 文件数据
-const memoriesData = await queryContent('memories/memories').findOne()
-
-// 处理照片数据
 const basePhotos = ref<Photo[]>([])
-if (memoriesData && memoriesData.img && Array.isArray(memoriesData.img)) {
-  basePhotos.value = memoriesData.img.map((src: string, index: number) => ({
-    id: `photo-${index + 1}`,
-    src: src,
-    alt: `照片-${index + 1}`,
-  }))
-  // console.log('成功获取 memories 数据:', basePhotos.value)
-} else {
-  if (process.client) {
-    console.warn('没有找到 memories 数据')
-  }
-}
 
-// console.log('使用的照片数据:', basePhotos.value)
+const memoryImageList = [
+  '/memoimg/1.webp',
+  '/memoimg/2.webp',
+  '/memoimg/3.webp',
+  '/memoimg/4.webp',
+  '/memoimg/5.webp',
+  '/memoimg/6.webp',
+  '/memoimg/7.webp',
+  '/memoimg/8.webp',
+  '/memoimg/9.webp',
+  '/memoimg/10.webp',
+  '/memoimg/11.webp',
+  '/memoimg/12.webp',
+  '/memoimg/13.webp',
+  '/memoimg/14.webp',
+  '/memoimg/15.webp',
+  '/memoimg/16.webp',
+  '/memoimg/17.webp',
+  '/memoimg/18.webp',
+  '/memoimg/19.webp',
+  '/memoimg/20.webp',
+  '/memoimg/21.webp',
+  '/memoimg/22.webp',
+  '/memoimg/23.webp',
+  '/memoimg/24.webp',
+  '/memoimg/25.webp',
+  '/memoimg/26.webp',
+  '/memoimg/27.webp',
+  '/memoimg/28.webp',
+  '/memoimg/29.webp',
+  '/memoimg/30.webp',
+  '/memoimg/31.webp',
+  '/memoimg/32.webp',
+  '/memoimg/33.webp',
+]
+
+basePhotos.value = memoryImageList.map((src, index) => ({
+  id: `photo-${index + 1}`,
+  src,
+  alt: `照片-${index + 1}`,
+}))
 
 const shuffle = (photos: Photo[]) => {
   const result = [...photos]
