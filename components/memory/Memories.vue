@@ -18,8 +18,7 @@
             <NuxtImg
               :src="photo.src"
               :alt="photo.alt"
-              width="auto"
-              height="200"
+              width="300"
               format="webp"
               quality="70"
               :preload="{ fetchPriority: 'high' }"
@@ -173,6 +172,7 @@ buildRows()
 }
 
 img {
+  width: auto;
   height: 200px;
 }
 
