@@ -18,6 +18,7 @@
             <NuxtImg
               :src="photo.src"
               :alt="photo.alt"
+              width="auto"
               height="200"
               format="webp"
               quality="70"
@@ -169,6 +170,10 @@ buildRows()
 .is-loading img {
   display: none;
   visibility: hidden;
+}
+
+img {
+  height: 200px;
 }
 
 @keyframes scroll-left {
