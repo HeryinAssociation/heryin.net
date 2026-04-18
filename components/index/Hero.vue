@@ -34,7 +34,7 @@
           </h1>
           <div class="max-w-3xl mx-auto">
             <p class="text-xl text-gray-600 mb-8">
-              和瑛社是一个致力于桥接理论与实践的差距，通过实践学习来促进成员的个人全面发展的创新创业型社团。
+              和瑛社是一个致力于桥接理论与实践的差距，促进人的全面发展的学生社团。
             </p>
             <div
               class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
@@ -52,7 +52,7 @@
                   class="btn text-red-900 bg-red-100 hover:bg-red-200 border-red-300 w-full sm:w-auto sm:ml-4"
                   to="/project"
                 >
-                  了解项目
+                  详细了解
                 </NuxtLink>
               </div>
             </div>

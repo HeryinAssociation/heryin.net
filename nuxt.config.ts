@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     },
   },
   content: {
-    documentDriven: true,
+    documentDriven: false,
   },
   postcss: {
     plugins: {
@@ -42,4 +42,6 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+
+  compatibilityDate: '2026-04-15',
 })
