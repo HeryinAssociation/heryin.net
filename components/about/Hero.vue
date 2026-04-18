@@ -5,12 +5,12 @@
       <!-- Section header -->
       <img
         class="z-0 w-full h-auto max-aspect-5/6:hidden"
-        :src="HeroImage"
+        src="/images/about/about-heryin-hero.png"
         alt="Hero"
       />
       <img
         class="z-0 w-full h-auto aspect-5/6:hidden"
-        :src="HeroImageSm"
+        src="/images/about/about-heryin-hero-sm.png"
         alt="Hero"
       />
       <div class="absolute z-10 inset-0 w-full bg-gray-700 opacity-70"></div>
@@ -28,11 +28,6 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-import HeroImage from '~/assets/images/about/about-heryin-hero.png'
-import HeroImageSm from '~/assets/images/about/about-heryin-hero-sm.png'
-</script>
 
 <style scoped>
 @media (min-aspect-ratio: 5/6) {

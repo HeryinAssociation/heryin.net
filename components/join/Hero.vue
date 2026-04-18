@@ -6,11 +6,7 @@
         <!-- Section header -->
         <div class="text-center pb-12 md:pb-16">
           <div class="flex flex-col justify-center pb-6 md:pb-8">
-            <img
-              class="mx-auto max-h-full md:max-h-96"
-              :src="HeroImage"
-              alt="Hero"
-            />
+            <img class="mx-auto max-h-full md:max-h-96" src="/images/join/Hero.webp" alt="Hero" />
           </div>
           <h1
             class="hidden md:flex md:justify-center text-7xl font-extrabold leading-tighter tracking-tighter mb-4"
@@ -55,6 +51,3 @@
   </section>
 </template>
 
-<script setup lang="ts">
-import HeroImage from '~/assets/images/join/Hero.webp'
-</script>

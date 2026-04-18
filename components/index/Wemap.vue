@@ -10,7 +10,7 @@
             <!-- 中国地图 -->
             <div class="absolute inset-0 flex items-center justify-center">
               <img
-                :src="ChinaOutline"
+                src="/svg/China-outline.svg"
                 alt="中国地图"
                 class="w-full h-full max-h-3/4 object-contain animate-pulse-slow"
               />
@@ -119,7 +119,6 @@
 </template>
 
 <script lang="ts" setup>
-import ChinaOutline from '~/assets/svg/China-outline.svg'
 
 // 图标配置
 const icons = [

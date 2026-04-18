@@ -23,8 +23,8 @@ const projectFiles = (await queryContent('/project')
 // 处理项目数据
 const projectContent = []
 for (const file of projectFiles) {
-  console.log('=== 处理项目 ===')
-  console.log('项目信息:', file)
+  // console.log('=== 处理项目 ===')
+  // console.log('项目信息:', file)
 
   let imgUrl = file.cover || ''
   let title = file.title || '无标题项目'

@@ -10,7 +10,7 @@
           <div class="mb-2">
             <!-- Logo -->
             <NuxtLink to="/" class="inline-block" aria-label="GeekPara">
-              <img :src="Logo" width="100" />
+              <img src="/images/public/heryin-logo.svg" width="100" />
             </NuxtLink>
           </div>
           <div class="text-sm text-gray-600">
@@ -115,8 +115,6 @@
 </template>
 
 <script setup lang="ts">
-import Logo from '~/assets/images/public/heryin-logo.svg'
-
 const content = [
   {
     title: '和瑛社',

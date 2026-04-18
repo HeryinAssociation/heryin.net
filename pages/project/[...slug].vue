@@ -30,17 +30,17 @@
 <script setup lang="ts">
 // 调试slug参数
 const route = useRoute()
-console.log('slug route:', route)
-console.log('slug params:', route.params)
+// console.log('slug route:', route)
+// console.log('slug params:', route.params)
 
 // 获取slug参数并查询对应的内容文件
 const slug = route.params.slug as string[] | undefined
 const slugPath = slug ? slug.join('/') : ''
-console.log('Slug path:', slugPath)
+// console.log('Slug path:', slugPath)
 
 // 根据slug查询对应的内容文件
 // 确保使用正确的路径，避免重复添加/project前缀
-console.log('Querying content with slugPath:', slugPath)
+// console.log('Querying content with slugPath:', slugPath)
 
 // 安全地查询内容，处理可能的错误
 let page = null
@@ -49,7 +49,7 @@ let error = null
 try {
   // findOne() 直接返回找到的文档对象
   page = await queryContent(`/project/${slugPath}`).findOne()
-  console.log('Query result (page content):', page)
+  // console.log('Query result (page content):', page)
 } catch (err) {
   error = err
   console.error('Error querying content:', err)

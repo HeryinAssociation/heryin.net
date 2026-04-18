@@ -84,10 +84,6 @@
 
 <script setup lang="ts">
 import icons from '~/assets/icons/index/resource'
-import Tab01 from '~/assets/images/index/resource/1.webp'
-import Tab02 from '~/assets/images/index/resource/2.webp'
-import Tab03 from '~/assets/images/index/resource/3.webp'
-import Tab04 from '~/assets/images/index/resource/4.webp'
 
 const currentTab = ref(0)
 
@@ -96,25 +92,25 @@ const tabContent = [
     title: '实践学习',
     text: '实践是认识的基础；学习是深刻的认识过程，和瑛主张以身体力行的具体实践活动引导学习，建设学习型组织。',
     icon: icons.moon,
-    img: Tab01,
+    img: '/images/index/resource/1.webp',
   },
   {
     title: '以人为本',
     text: '尊重人，关怀人，培养人，发展人；和瑛主张社团建设要有利于成员的全面发展，成果由全体成员共享。',
     icon: icons.thunder,
-    img: Tab02,
+    img: '/images/index/resource/2.webp',
   },
   {
     title: '创意驱动',
     text: '社团开展工作，发起项目，都要仰赖于全社的创意和智慧。和瑛社鼓励创意，帮助创意落实。',
     icon: icons.arrow,
-    img: Tab03,
+    img: '/images/index/resource/3.webp',
   },
   {
     title: '社区共创',
     text: '和瑛社发源于社区，发展离不开社区；和瑛社希望团结广大社区，实现资源畅通，多元协作、共同发展。',
     icon: icons.son,
-    img: Tab04,
+    img: '/images/index/resource/4.webp',
   },
 ]
 </script>

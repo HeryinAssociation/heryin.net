@@ -3,7 +3,7 @@
     <div class="flex flex-row-reverse pb-24 justify-center items-center">
       <img
         class="rounded-full self-start shrink-0 shadow-lg ml-4"
-        :src="Zhao"
+        src="/images/join/zhang.webp"
         width="120"
         height="120"
         alt="Logo"
@@ -26,6 +26,3 @@
   </section>
 </template>
 
-<script setup lang="ts">
-import Zhao from '~/assets/images/join/zhang.webp'
-</script>

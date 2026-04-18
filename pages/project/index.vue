@@ -84,10 +84,10 @@ for (const article of contentQuery) {
 list.sort((a, b) => (a.date > b.date ? -1 : 1))
 
 // 调试输出最终的链接
-console.log(
-  '最终生成的链接列表:',
-  list.map((item) => item.link)
-)
+// console.log(
+//   '最终生成的链接列表:',
+//   list.map((item) => item.link)
+// )
 
 onMounted(() => {
   const observerOptions = {

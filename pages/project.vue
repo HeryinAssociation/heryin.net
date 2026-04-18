@@ -29,7 +29,7 @@ const projectListLoaded = ref(true)
 const detailPageLoaded = ref(true)
 
 onMounted(() => {
-  console.log('onMounted - isProjectDetailPage:', isProjectDetailPage.value)
+  // console.log('onMounted - isProjectDetailPage:', isProjectDetailPage.value)
   projectListLoaded.value = !isProjectDetailPage.value
   detailPageLoaded.value = true
 
@@ -55,12 +55,12 @@ onMounted(() => {
 watch(
   () => route.path,
   (newPath) => {
-    console.log(
-      'Route changed:',
-      newPath,
-      'isProjectDetailPage:',
-      isProjectDetailPage.value
-    )
+    // console.log(
+    //   'Route changed:',
+    //   newPath,
+    //   'isProjectDetailPage:',
+    //   isProjectDetailPage.value
+    // )
     projectListLoaded.value = !isProjectDetailPage.value
     detailPageLoaded.value = true
   }

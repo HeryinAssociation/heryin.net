@@ -71,12 +71,12 @@ if (memoriesData && memoriesData.img && Array.isArray(memoriesData.img)) {
     src: src,
     alt: `照片-${index + 1}`,
   }))
-  console.log('成功获取 memories 数据:', basePhotos.value)
+  // console.log('成功获取 memories 数据:', basePhotos.value)
 } else {
-  console.log('没有找到 memories 数据')
+  // console.log('没有找到 memories 数据')
 }
 
-console.log('使用的照片数据:', basePhotos.value)
+// console.log('使用的照片数据:', basePhotos.value)
 
 // 创建一个随机排序的照片数组
 const getRandomPhotos = () => {

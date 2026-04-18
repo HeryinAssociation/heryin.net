@@ -10,7 +10,7 @@
         <div class="shrink-0 mr-4">
           <!-- Logo -->
           <NuxtLink to="/" class="block" aria-label="GeekPara">
-            <img :src="Logo" width="100" />
+            <img src="/images/public/heryin-logo.svg" width="100" />
           </NuxtLink>
         </div>
 
@@ -130,8 +130,6 @@
 </template>
 
 <script setup lang="ts">
-import Logo from '~/assets/images/public/heryin-logo.svg'
-
 const top = ref(true)
 const mobileNavOpen = ref(false)
 

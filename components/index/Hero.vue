@@ -6,11 +6,7 @@
         <!-- Section header -->
         <div class="text-center pb-12 md:pb-16">
           <div class="flex flex-col justify-center pb-6 md:pb-8">
-            <img
-              class="mx-auto max-h-44 md:max-h-64"
-              :src="HeroImage"
-              alt="Hero"
-            />
+            <img class="mx-auto max-h-44 md:max-h-64" src="/images/public/heryin-illu.svg" alt="Hero" />
           </div>
           <h1
             class="hidden md:flex md:justify-center text-7xl font-extrabold leading-tighter tracking-tighter mb-4"
@@ -63,6 +59,3 @@
   </section>
 </template>
 
-<script setup lang="ts">
-import HeroImage from '~/assets/images/public/heryin-illu.svg'
-</script>
