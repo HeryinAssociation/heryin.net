@@ -30,8 +30,8 @@
 </template>
 
 <script setup lang="ts">
-import HeroImage from 'assets/images/about/about-heryin-hero.png'
-import HeroImageSm from 'assets/images/about/about-heryin-hero-sm.png'
+import HeroImage from '~/assets/images/about/about-heryin-hero.png'
+import HeroImageSm from '~/assets/images/about/about-heryin-hero-sm.png'
 </script>
 
 <style scoped>

@@ -56,5 +56,5 @@
 </template>
 
 <script setup lang="ts">
-import HeroImage from 'assets/images/join/Hero.webp'
+import HeroImage from '~/assets/images/join/Hero.webp'
 </script>

@@ -5,9 +5,9 @@
 </template>
 
 <script setup lang="ts">
-import Img1Lunbotu0 from 'assets/images/Index/Lunbotu/1.webp'
-import Img1Lunbotu1 from 'assets/images/Index/Lunbotu/2.webp'
-import Img1Lunbotu2 from 'assets/images/Index/Lunbotu/3.webp'
+import Img1Lunbotu0 from '~/assets/images/Index/Lunbotu/1.webp'
+import Img1Lunbotu1 from '~/assets/images/Index/Lunbotu/2.webp'
+import Img1Lunbotu2 from '~/assets/images/Index/Lunbotu/3.webp'
 
 const content = [
   {

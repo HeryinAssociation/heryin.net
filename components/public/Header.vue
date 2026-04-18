@@ -130,8 +130,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
-import Logo from 'assets/images/public/heryin-logo.svg'
+import Logo from '~/assets/images/public/heryin-logo.svg'
 
 const top = ref(true)
 const mobileNavOpen = ref(false)

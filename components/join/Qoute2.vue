@@ -27,5 +27,5 @@
 </template>
 
 <script setup lang="ts">
-import Zhao from 'assets/images/join/zhang.webp'
+import Zhao from '~/assets/images/join/zhang.webp'
 </script>

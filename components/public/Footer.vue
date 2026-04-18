@@ -115,7 +115,7 @@
 </template>
 
 <script setup lang="ts">
-import Logo from 'assets/images/public/heryin-logo.svg'
+import Logo from '~/assets/images/public/heryin-logo.svg'
 
 const content = [
   {

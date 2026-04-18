@@ -83,11 +83,11 @@
 </template>
 
 <script setup lang="ts">
-import icons from 'assets/icons/index/resource'
-import Tab01 from 'assets/images/index/resource/1.webp'
-import Tab02 from 'assets/images/index/resource/2.webp'
-import Tab03 from 'assets/images/index/resource/3.webp'
-import Tab04 from 'assets/images/index/resource/4.webp'
+import icons from '~/assets/icons/index/resource'
+import Tab01 from '~/assets/images/index/resource/1.webp'
+import Tab02 from '~/assets/images/index/resource/2.webp'
+import Tab03 from '~/assets/images/index/resource/3.webp'
+import Tab04 from '~/assets/images/index/resource/4.webp'
 
 const currentTab = ref(0)
 

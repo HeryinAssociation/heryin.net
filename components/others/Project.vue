@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import icons from 'assets/icons/index/project'
+import icons from '~/assets/icons/index/project'
 
 const cardContent = [
   {

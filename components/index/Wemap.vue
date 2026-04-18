@@ -119,7 +119,6 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted, computed } from 'vue'
 import ChinaOutline from '~/assets/svg/China-outline.svg'
 
 // 图标配置

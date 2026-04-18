@@ -64,5 +64,5 @@
 </template>
 
 <script setup lang="ts">
-import HeroImage from 'assets/images/public/heryin-illu.svg'
+import HeroImage from '~/assets/images/public/heryin-illu.svg'
 </script>
